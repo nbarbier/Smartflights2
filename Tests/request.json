@@ -1,0 +1,22 @@
+{
+  "request": {
+    "passengers": {
+      "adultCount": 1
+    },
+    "slice": [
+      {
+        "origin": "SFO",
+        "destination": "ATL",
+		"destination": "ORD",
+		"destination": "LAX",
+		"destination": "MIA",
+		"destination": "DFW",
+		"destination": "DEN",
+		"destination": "JFK",
+        "date": "2014-08-21",
+		"date": "2014-08-22"
+      }
+    ],
+	"solutions": 5
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "request": {
+    "passengers": {
+      "adultCount": 1
+    },
+    "slice": [
+      {
+        "origin": "SFO",
+        "destination": "JFK",
+		"destination": "ORD",
+		"date": "2014-08-22",
+		"maxStops": 1
+      }
+    ]
+  }
+}

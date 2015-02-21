@@ -1,0 +1,2 @@
+curl -d @request_A.json --header "Content-Type: application/json" https://www.googleapis.com/qpxExpress/v1/trips/search?key=AIzaSyAi6T13R5pLSNc_uzwd-0E5VljwzSzN0xw > result_A.json
+curl -d @request_B.json --header "Content-Type: application/json" https://www.googleapis.com/qpxExpress/v1/trips/search?key=AIzaSyAi6T13R5pLSNc_uzwd-0E5VljwzSzN0xw > result_B.json

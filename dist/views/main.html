@@ -1,0 +1,94 @@
+<script type="text/ng-template" id="customTemplate.html"><a>
+      <img ng-src="http://upload.wikimedia.org/wikipedia/commons/thumb/{{match.model.flag}}" width="16">
+      <span bind-html-unsafe="match.label | typeaheadHighlight:query"></span>
+  </a></script> <div class="jumbotron" ng-controller="MainCtrl"> <div class="container"> <h1>Find the place to meet.</h1> <p>Choose the best routes to meet your loved one.</p> </div> <div class="row"> <div class="col-md-4"> <input type="text" ng-model="from1" placeholder="Your Departure" typeahead="airport for airport in getLocation($viewValue)" typeahead-loading="loadingLocations" class="form-control">  <input type="text" ng-model="from2" placeholder="Other Departure" typeahead="airport for airport in getLocation($viewValue)" typeahead-loading="loadingLocations" class="form-control">  <p class="input-group"> <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dt" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close"> <span class="input-group-btn"> <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i> </button> </span> </p> </div> </div>  <button type="button" class="btn btn-primary" ng-click="getMatch()">Search</button> </div> <!--   <div ng-controller="MainCtrl">
+    <pre>Selected date is: <em>{{dt | date:'fullDate' }}</em></pre>
+
+    <h4>Inline</h4>
+    <div style="display:inline-block; min-height:290px;">
+        <datepicker ng-model="dt" min-date="minDate" show-weeks="true" class="well well-sm"></datepicker>
+    </div>
+
+    <h4>Popup</h4>
+    <div class="row">
+        <div class="col-md-2">
+            <p class="input-group">
+              <input type="text" class="form-control" datepicker-popup="dd.MM.yyyy" ng-model="dt" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+              </span>
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <label>Format:</label> <select class="form-control" ng-model="format" ng-options="f for f in formats"><option></option></select>
+        </div>
+    </div>
+
+    <hr />
+    <button type="button" class="btn btn-sm btn-info" ng-click="today()">Today</button>
+    <button type="button" class="btn btn-sm btn-default" ng-click="dt = '2009-08-24'">2009-08-24</button>
+    <button type="button" class="btn btn-sm btn-danger" ng-click="clear()">Clear</button>
+    <button type="button" class="btn btn-sm btn-default" ng-click="toggleMin()" tooltip="After today restriction">Min date</button>
+	</div>
+
+
+            <form class="pure-form pure-form-aligned" method="post" action="query.php">
+            <fieldset>
+                <div class="pure-control-group">
+                    <input id="from1" type="text" placeholder="Your Departure">
+                </div>
+                <div class="pure-control-group">
+                    <input id="from2" type="text" placeholder="His/Her Departure">
+                </div>
+            </fieldset>
+            <input type="submit" value="Search" class="pure-button pure-button-primary">
+        </form>
+--> <!--
+    <div class="neighborhood-guides">
+      <div class="container">
+        <h2>Find the best flights and the best rates.</h2>
+        <p>Not sure where to meet? We have the answer for you.</p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="http://goo.gl/0sX3jq">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="http://goo.gl/Av1pac">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="http://goo.gl/vw43v1">
+                </div>
+            </div>
+        </div>
+      </div>
+    </div> 
+    
+    <div class="learn-more">
+	  <div class="container">
+		<div class="row">
+	      <div class="col-md-4">
+			<h3>Flights</h3>
+			<p>Find the best flights and the best rates to meet with your loved ones.</p>
+			<p><a href="#">See how to travel on Smartflights</a></p>
+	      </div>
+		  <div class="col-md-4">
+			<h3>Accomodation</h3>
+			<p>Find out the best deals for your destination.</p>
+			<p><a href="#">Learn more about bookings</a></p>
+		  </div>
+		  <div class="col-md-4">
+			<h3>FAQ</h3>
+			<p>Questions? We are here to answer.</p>
+			<p><a href="#">Go to FAQs</a></p>
+		  </div>
+	    </div>
+	  </div>
+	</div>
+	-->

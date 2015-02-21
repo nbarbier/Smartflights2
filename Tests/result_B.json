@@ -1,0 +1,537 @@
+{
+ "kind": "qpxExpress#tripsSearch",
+ "trips": {
+  "kind": "qpxexpress#tripOptions",
+  "requestId": "AwMpb5Kmv3ig9hGyB0KF6s",
+  "data": {
+   "kind": "qpxexpress#data",
+   "airport": [
+    {
+     "kind": "qpxexpress#airportData",
+     "code": "ATL",
+     "city": "ATL",
+     "name": "Atlanta Hartsfield-Jackson ATL"
+    },
+    {
+     "kind": "qpxexpress#airportData",
+     "code": "BOS",
+     "city": "BOS",
+     "name": "Boston Logan International"
+    }
+   ],
+   "city": [
+    {
+     "kind": "qpxexpress#cityData",
+     "code": "ATL",
+     "name": "Atlanta"
+    },
+    {
+     "kind": "qpxexpress#cityData",
+     "code": "BOS",
+     "name": "Boston"
+    }
+   ],
+   "aircraft": [
+    {
+     "kind": "qpxexpress#aircraftData",
+     "code": "717",
+     "name": "Boeing 717"
+    }
+   ],
+   "tax": [
+    {
+     "kind": "qpxexpress#taxData",
+     "id": "ZP",
+     "name": "US Flight Segment Tax"
+    },
+    {
+     "kind": "qpxexpress#taxData",
+     "id": "XF",
+     "name": "US Passenger Facility Charge"
+    },
+    {
+     "kind": "qpxexpress#taxData",
+     "id": "AY",
+     "name": "US September 11th Security Fee"
+    },
+    {
+     "kind": "qpxexpress#taxData",
+     "id": "US_1",
+     "name": "US Transportation Tax"
+    }
+   ],
+   "carrier": [
+    {
+     "kind": "qpxexpress#carrierData",
+     "code": "FL",
+     "name": "AirTran Airways, Inc."
+    }
+   ]
+  },
+  "tripOption": [
+   {
+    "kind": "qpxexpress#tripOption",
+    "saleTotal": "USD161.00",
+    "id": "3jkO99rmCD1PrA8vJuyizJ003",
+    "slice": [
+     {
+      "kind": "qpxexpress#sliceInfo",
+      "duration": 180,
+      "segment": [
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 180,
+        "flight": {
+         "carrier": "FL",
+         "number": "160"
+        },
+        "id": "GKoQPD0mTDnrtERl",
+        "cabin": "COACH",
+        "bookingCode": "E",
+        "bookingCodeCount": 7,
+        "marriedSegmentGroup": "0",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "LACLDFbULKOmXeUC",
+          "aircraft": "717",
+          "arrivalTime": "2014-08-21T20:20-04:00",
+          "departureTime": "2014-08-21T17:20-04:00",
+          "origin": "BOS",
+          "destination": "ATL",
+          "originTerminal": "E",
+          "destinationTerminal": "N",
+          "duration": 180,
+          "mileage": 945,
+          "secure": true
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "pricing": [
+     {
+      "kind": "qpxexpress#pricingInfo",
+      "fare": [
+       {
+        "kind": "qpxexpress#fareInfo",
+        "id": "A8A3cvIHkW8BHMyjgl/xmEdAyjecljSCeR+3UjHILIJ6",
+        "carrier": "FL",
+        "origin": "BOS",
+        "destination": "ATL",
+        "basisCode": "ELNVVNR"
+       }
+      ],
+      "segmentPricing": [
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "A8A3cvIHkW8BHMyjgl/xmEdAyjecljSCeR+3UjHILIJ6",
+        "segmentId": "GKoQPD0mTDnrtERl",
+        "freeBaggageOption": [
+         {
+          "kind": "qpxexpress#freeBaggageAllowance",
+          "pieces": 0
+         }
+        ]
+       }
+      ],
+      "baseFareTotal": "USD139.53",
+      "saleFareTotal": "USD139.53",
+      "saleTaxTotal": "USD21.47",
+      "saleTotal": "USD161.00",
+      "passengers": {
+       "kind": "qpxexpress#passengerCounts",
+       "adultCount": 1
+      },
+      "tax": [
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "US_1",
+        "chargeType": "GOVERNMENT",
+        "code": "US",
+        "country": "US",
+        "salePrice": "USD10.47"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "AY",
+        "chargeType": "GOVERNMENT",
+        "code": "AY",
+        "country": "US",
+        "salePrice": "USD2.50"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "XF",
+        "chargeType": "GOVERNMENT",
+        "code": "XF",
+        "country": "US",
+        "salePrice": "USD4.50"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "ZP",
+        "chargeType": "GOVERNMENT",
+        "code": "ZP",
+        "country": "US",
+        "salePrice": "USD4.00"
+       }
+      ],
+      "fareCalculation": "BOS FL ATL 139.53ELNVVNR USD 139.53 END ZP BOS XT 10.47US 4.00ZP 2.50AY 4.50XF BOS4.50",
+      "latestTicketingTime": "2014-07-08T23:59-04:00",
+      "ptc": "ADT"
+     }
+    ]
+   },
+   {
+    "kind": "qpxexpress#tripOption",
+    "saleTotal": "USD161.00",
+    "id": "3jkO99rmCD1PrA8vJuyizJ002",
+    "slice": [
+     {
+      "kind": "qpxexpress#sliceInfo",
+      "duration": 180,
+      "segment": [
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 180,
+        "flight": {
+         "carrier": "FL",
+         "number": "2"
+        },
+        "id": "GbvgrKXYENr5AGOz",
+        "cabin": "COACH",
+        "bookingCode": "E",
+        "bookingCodeCount": 7,
+        "marriedSegmentGroup": "0",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "LiEYuXUZ3hC3H6i5",
+          "aircraft": "717",
+          "arrivalTime": "2014-08-21T09:05-04:00",
+          "departureTime": "2014-08-21T06:05-04:00",
+          "origin": "BOS",
+          "destination": "ATL",
+          "originTerminal": "E",
+          "destinationTerminal": "N",
+          "duration": 180,
+          "onTimePerformance": 90,
+          "mileage": 945,
+          "secure": true
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "pricing": [
+     {
+      "kind": "qpxexpress#pricingInfo",
+      "fare": [
+       {
+        "kind": "qpxexpress#fareInfo",
+        "id": "A8A3cvIHkW8BHMyjgl/xmEdAyjecljSCeR+3UjHILIJ6",
+        "carrier": "FL",
+        "origin": "BOS",
+        "destination": "ATL",
+        "basisCode": "ELNVVNR"
+       }
+      ],
+      "segmentPricing": [
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "A8A3cvIHkW8BHMyjgl/xmEdAyjecljSCeR+3UjHILIJ6",
+        "segmentId": "GbvgrKXYENr5AGOz",
+        "freeBaggageOption": [
+         {
+          "kind": "qpxexpress#freeBaggageAllowance",
+          "pieces": 0
+         }
+        ]
+       }
+      ],
+      "baseFareTotal": "USD139.53",
+      "saleFareTotal": "USD139.53",
+      "saleTaxTotal": "USD21.47",
+      "saleTotal": "USD161.00",
+      "passengers": {
+       "kind": "qpxexpress#passengerCounts",
+       "adultCount": 1
+      },
+      "tax": [
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "US_1",
+        "chargeType": "GOVERNMENT",
+        "code": "US",
+        "country": "US",
+        "salePrice": "USD10.47"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "AY",
+        "chargeType": "GOVERNMENT",
+        "code": "AY",
+        "country": "US",
+        "salePrice": "USD2.50"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "XF",
+        "chargeType": "GOVERNMENT",
+        "code": "XF",
+        "country": "US",
+        "salePrice": "USD4.50"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "ZP",
+        "chargeType": "GOVERNMENT",
+        "code": "ZP",
+        "country": "US",
+        "salePrice": "USD4.00"
+       }
+      ],
+      "fareCalculation": "BOS FL ATL 139.53ELNVVNR USD 139.53 END ZP BOS XT 10.47US 4.00ZP 2.50AY 4.50XF BOS4.50",
+      "latestTicketingTime": "2014-07-08T23:59-04:00",
+      "ptc": "ADT"
+     }
+    ]
+   },
+   {
+    "kind": "qpxexpress#tripOption",
+    "saleTotal": "USD161.00",
+    "id": "3jkO99rmCD1PrA8vJuyizJ001",
+    "slice": [
+     {
+      "kind": "qpxexpress#sliceInfo",
+      "duration": 175,
+      "segment": [
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 175,
+        "flight": {
+         "carrier": "FL",
+         "number": "120"
+        },
+        "id": "GZjKc8rQ4H8RYmcI",
+        "cabin": "COACH",
+        "bookingCode": "E",
+        "bookingCodeCount": 7,
+        "marriedSegmentGroup": "0",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "Le0uNhmWvaMetD1-",
+          "aircraft": "717",
+          "arrivalTime": "2014-08-21T17:50-04:00",
+          "departureTime": "2014-08-21T14:55-04:00",
+          "origin": "BOS",
+          "destination": "ATL",
+          "originTerminal": "E",
+          "destinationTerminal": "N",
+          "duration": 175,
+          "onTimePerformance": 90,
+          "mileage": 945,
+          "secure": true
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "pricing": [
+     {
+      "kind": "qpxexpress#pricingInfo",
+      "fare": [
+       {
+        "kind": "qpxexpress#fareInfo",
+        "id": "A8A3cvIHkW8BHMyjgl/xmEdAyjecljSCeR+3UjHILIJ6",
+        "carrier": "FL",
+        "origin": "BOS",
+        "destination": "ATL",
+        "basisCode": "ELNVVNR"
+       }
+      ],
+      "segmentPricing": [
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "A8A3cvIHkW8BHMyjgl/xmEdAyjecljSCeR+3UjHILIJ6",
+        "segmentId": "GZjKc8rQ4H8RYmcI",
+        "freeBaggageOption": [
+         {
+          "kind": "qpxexpress#freeBaggageAllowance",
+          "pieces": 0
+         }
+        ]
+       }
+      ],
+      "baseFareTotal": "USD139.53",
+      "saleFareTotal": "USD139.53",
+      "saleTaxTotal": "USD21.47",
+      "saleTotal": "USD161.00",
+      "passengers": {
+       "kind": "qpxexpress#passengerCounts",
+       "adultCount": 1
+      },
+      "tax": [
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "US_1",
+        "chargeType": "GOVERNMENT",
+        "code": "US",
+        "country": "US",
+        "salePrice": "USD10.47"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "AY",
+        "chargeType": "GOVERNMENT",
+        "code": "AY",
+        "country": "US",
+        "salePrice": "USD2.50"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "XF",
+        "chargeType": "GOVERNMENT",
+        "code": "XF",
+        "country": "US",
+        "salePrice": "USD4.50"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "ZP",
+        "chargeType": "GOVERNMENT",
+        "code": "ZP",
+        "country": "US",
+        "salePrice": "USD4.00"
+       }
+      ],
+      "fareCalculation": "BOS FL ATL 139.53ELNVVNR USD 139.53 END ZP BOS XT 10.47US 4.00ZP 2.50AY 4.50XF BOS4.50",
+      "latestTicketingTime": "2014-07-08T23:59-04:00",
+      "ptc": "ADT"
+     }
+    ]
+   },
+   {
+    "kind": "qpxexpress#tripOption",
+    "saleTotal": "USD237.00",
+    "id": "3jkO99rmCD1PrA8vJuyizJ004",
+    "slice": [
+     {
+      "kind": "qpxexpress#sliceInfo",
+      "duration": 175,
+      "segment": [
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 175,
+        "flight": {
+         "carrier": "FL",
+         "number": "50"
+        },
+        "id": "GtrMCvZqPuiYBIaj",
+        "cabin": "COACH",
+        "bookingCode": "L",
+        "bookingCodeCount": 7,
+        "marriedSegmentGroup": "0",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "LQarwdZJH1lPmmOh",
+          "aircraft": "717",
+          "arrivalTime": "2014-08-21T15:00-04:00",
+          "departureTime": "2014-08-21T12:05-04:00",
+          "origin": "BOS",
+          "destination": "ATL",
+          "originTerminal": "E",
+          "destinationTerminal": "N",
+          "duration": 175,
+          "onTimePerformance": 90,
+          "mileage": 945,
+          "secure": true
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "pricing": [
+     {
+      "kind": "qpxexpress#pricingInfo",
+      "fare": [
+       {
+        "kind": "qpxexpress#fareInfo",
+        "id": "AQctAwLrdq23iVw+4izRjfogfdvAr0HHbN+iF9KjY6R/",
+        "carrier": "FL",
+        "origin": "BOS",
+        "destination": "ATL",
+        "basisCode": "LLNUPNR"
+       }
+      ],
+      "segmentPricing": [
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "AQctAwLrdq23iVw+4izRjfogfdvAr0HHbN+iF9KjY6R/",
+        "segmentId": "GtrMCvZqPuiYBIaj",
+        "freeBaggageOption": [
+         {
+          "kind": "qpxexpress#freeBaggageAllowance",
+          "pieces": 0
+         }
+        ]
+       }
+      ],
+      "baseFareTotal": "USD210.23",
+      "saleFareTotal": "USD210.23",
+      "saleTaxTotal": "USD26.77",
+      "saleTotal": "USD237.00",
+      "passengers": {
+       "kind": "qpxexpress#passengerCounts",
+       "adultCount": 1
+      },
+      "tax": [
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "US_1",
+        "chargeType": "GOVERNMENT",
+        "code": "US",
+        "country": "US",
+        "salePrice": "USD15.77"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "AY",
+        "chargeType": "GOVERNMENT",
+        "code": "AY",
+        "country": "US",
+        "salePrice": "USD2.50"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "XF",
+        "chargeType": "GOVERNMENT",
+        "code": "XF",
+        "country": "US",
+        "salePrice": "USD4.50"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "ZP",
+        "chargeType": "GOVERNMENT",
+        "code": "ZP",
+        "country": "US",
+        "salePrice": "USD4.00"
+       }
+      ],
+      "fareCalculation": "BOS FL ATL 210.23LLNUPNR USD 210.23 END ZP BOS XT 15.77US 4.00ZP 2.50AY 4.50XF BOS4.50",
+      "latestTicketingTime": "2014-07-08T23:59-04:00",
+      "ptc": "ADT"
+     }
+    ]
+   }
+  ]
+ }
+}
