@@ -5,11 +5,14 @@
   </a>
 </script>
 
+<div ng-controller="MainCtrl">
+<!--
 <div class="jumbotron" ng-controller="MainCtrl">
     <div class="container">
         <h1>Find the place to meet.</h1>
         <p>Choose the best routes to meet your loved one.</p>
     </div>
+-->
 	<div class="row">
         <div class="col-md-4">
             
@@ -19,12 +22,11 @@
             </br>
             <input type="text" ng-model="from2" placeholder="Other Departure" typeahead="airport for airport in getLocation($viewValue)" typeahead-loading="loadingLocations" class="form-control" >
             </br>-->
-
+            </br>
             <input type="text" ng-model="from1" placeholder="Your Departure" typeahead="airport as airport.name + ' (' + airport.iata + ')' for airport in airportList.airports | filter:$viewValue" typeahead-template-url="customTemplate.html" class="form-control">
             </br>
             <input type="text" ng-model="from2" placeholder="Other Departure" typeahead="airport as airport.name + ' (' + airport.iata + ')' for airport in airportList.airports | filter:$viewValue" typeahead-template-url="customTemplate.html" class="form-control">
             </br>
-
             
 
             <p class="input-group">   
@@ -38,19 +40,37 @@
         </div>
     </div> 
     </br>
-    <button type="button" class="btn btn-primary" ng-click="getMatch()">Search</button>   
+    <button type="button" class="btn btn-primary" ng-click="getMatch()">Search</button>  
+    <hr>
+    <div class="row">
+        <div class="col-md-8">  
+        
+            <accordion close-others="oneAtATime">
+            </br>
+                <accordion-group heading="{{route.name}}" ng-repeat="route in CWSResponse.routes" class="panel panel-info">
+                <accordion-heading>
+                    {{route.name}} <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+                </accordion-heading>
+                    <p>Route distance: {{route.distance}}</p> 
+                    <p>Route duration: {{route.duration}}</p>
+                </accordion-group>
+            </br>    
+            </accordion> 
+        </div> 
+    </div> 
+
+
+    
+     
 </div> 
 
-<div ng-repeat= "place in matchResult.places">
-    <p>{{place.longName}}</p>
-    <p>{{place.longName}}</p>
-</div>
 
 
 
-<div ng-repeat= "airport in airportList.airports">
-    <p>{{airport.name}}</p>
-</div>
+
+
+
+
 
 
 
